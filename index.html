@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Income Tax Department of India</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"   href="Images/favicon.png"> 
+        <link rel="manifest" href="/site.webmanifest">
+	    <script src="main.js" type="text/javascript"></script>
+        <script>
+            // DOM ready
+            $(function() {
+                
+                // Create the dropdown base
+                $("<select />").appendTo("nav");
+                
+                // Create default option "Go to..."
+                $("<option />", {
+                        "selected": "selected",
+                        "value"   : "",
+                        "text"    : "Home"
+                    }).appendTo("nav select");
+                
+                // Populate dropdown with menu items
+                $("nav a").each(function() {
+                        var el = $(this);
+                        $("<option />", {
+                            "value"   : el.attr("href"),
+                            "text"    : el.text()
+                        }).appendTo("nav select");
+                    });
+                
+                    // To make dropdown actually work
+                $("nav select").change(function() {
+                    window.location = $(this).find("option:selected").val();
+                    });
+                
+                });
+        </script>
+</head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="container">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="Images/logo.png" alt="Logo of Income Tax Department of India" width="175px"/>
+                    
+                </a>
+            </div> 
+            <nav>
+                <ul>
+                    <li class="nav_li"><button class="btn"><a href="about_us.html">About Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="feedback.html">Feedback</a></li>
+                    <li class="nav_li"><button class="btn"><a href="contact_us.html">Contact Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="signup.html">Registration</a></li>
+                </ul>
+            </nav>
+            </div>
+        <!-- Navigation Bar Ended-->
+        <br>
+
+        <div class="main">
+        <!-- News Pannel -->
+
+            <div class="news">
+                <div class="s-wrap"><div class="s-move">
+                    <div class="slide">
+                        <p class="text3">
+                            UDIN for Audit Forms / Audit certificates can be updated till 30th April, 2021.
+                        </p>
+                    </div>                    <div class="slide">
+                        <p class="text3">
+                            Last date for linking PAN with Aadhaar is 30th June, 2021. 
+                        </p>
+                    </div>                    <div class="slide">
+                        <p class="text3">
+                            Dear User, we are working on the FVU related changes. Kindly wait for some time. Once deployed suitable notice would be posted on the portal.
+                        </p>
+                    </div>                    <div class="slide">
+                        <p class="text3">
+                            An updated version of form 64D as per notification no. 55/2020 is now available for filing.
+                        </p>
+                    </div>                    <div class="slide">
+                        <p class="text3">
+                            Form 10G, 56, 3CF-I, 3CF-II and 3CF-III ceased to be effective on or after the 1st day of April, 2021.
+                        </p>
+                    </div>
+                  </div></div>          
+            
+            </div>
+
+        <!-- News Pannel Ended-->
+
+
+        <!-- Login Div-->
+        <div class="login">
+
+                
+            <h2>Login</h2><hr>
+            <form action="ifpressedsubmit.html">
+                <div class="label1">
+                    <label style="font-size: larger; padding: 20px;" for="Username">Username:</label><br></div>
+                    <input type="text" id="Username" name="Username" placeholder="Enter Your Username" required size="relative"><br><br>
+                    <div class="label1"><label style="font-size: larger; padding: 20px;" for="Password">Password:</label><br></div>
+                    <input type="password" id="Password" name="Password" placeholder="Enter Your Password" required size="relative"><br><br>
+                    <div  style="position: relative;" >
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                </div>                  
+            <p class="text1" style="color: red;">&nbsp;</p>    
+            <a href="recover.html"><p class="text1">Forgot Password?</p> </a>
+            </form>
+        </div>
+
+    <!-- Login Div Ended-->
+
+        <!-- News & Updates-->
+
+
+            <div class="updates">
+
+                <h2>News & Updates</h2>
+                <hr>
+                <ul><li><b>08/04/2021</b> 
+                    All institutions, funds etc covered under clause (i) and (iv) of first proviso to section 10(23C), fifth proviso to section 35(1), clause (i) and (iv) of first proviso to section 80G(5) and sub-clause (i) and (vi) of section 12A(1)(ac) of the Income Tax Act-1961 are required to re-register a fresh by using modified form-10A. Form-10A is also to be used for fresh registration under any of the above sections</li><br><br>
+                    <li><b>03/04/2021</b> User can now download and fill the offline utility for ITR 1 & 4 (AY 2021-22). The utility for other ITRs will be enabled shortly.</li><br><br>
+                    <li><b>03/04/2021</b> ITR submission for AY 2021-22 will be made available shortly.</li>
+                </ul>
+            
+            </div>
+        <!-- News & Updates Ended-->
+
+
+            <div class="link_faqs ">
+
+
+        <!-- Quick Links-->
+
+                <div class="qlinks">
+                    <h2>Quick Links</h2> <hr>
+
+                    <ul>
+                        <li>&#x2712; Instant PAN through Aadhaar</li><br>
+                        <li>&#x2712; Link Aadhaar</li><br>
+                        <li>&#x2712; Tax Calculator FY 2020-21</li><br>
+                        <li>&#x2712; e-Pay Tax | Challans</li><br>
+
+                    </ul>
+                    
+                    
+                </div>
+
+
+
+
+        <!-- Quick Links Ended-->
+
+        <!-- FAQs-->
+
+                <div class="faqs">
+                    <h2>FAQs</h2> <hr>
+                <ul>
+                    <li>&#128203; What is Income-tax?</li><br>
+                    <li>&#128203; How does the Government collect tax?</li><br>
+                    <li>&#128203; What are the applicble tax rates?</li><br>
+
+                </ul>
+                </div>
+
+
+        <!-- FAQs Ended-->
+            </div>
+            <br><br><br><br><br>
+        </div>
+        <div class="footer-basic">
+            <footer>
+                <p>Co-Created By: Arnav Sharma / Shivam Mishra / Manish Kumar Arya © 2021</p>
+            </footer>
+    </body>
+</html>

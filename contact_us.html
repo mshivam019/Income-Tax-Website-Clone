@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Income Tax Department of India</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"   href="Images/favicon.png"> 
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="main.js" type="text/javascript"></script>
+    <style>
+        table, th, td 
+        {
+            
+            border-collapse: collapse;
+            border: 2px solid #536162;
+            font-size: 17px;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        th {
+            background-color: #76b4bd ;
+            color: black;
+            font-size: 22px;
+        }
+        tr:hover {background-color: #bdeaee; }
+        td:hover{font-weight: bold;}
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+    </style>
+        <script>
+            // DOM ready
+            $(function() {
+                
+                // Create the dropdown base
+                $("<select />").appendTo("nav");
+                
+                // Create default option "Go to..."
+                $("<option />", {
+                        "selected": "selected",
+                        "value"   : "",
+                        "text"    : "Contact Us"
+                    }).appendTo("nav select");
+                
+                // Populate dropdown with menu items
+                $("nav a").each(function() {
+                        var el = $(this);
+                        $("<option />", {
+                            "value"   : el.attr("href"),
+                            "text"    : el.text()
+                        }).appendTo("nav select");
+                    });
+                
+                    // To make dropdown actually work
+                $("nav select").change(function() {
+                    window.location = $(this).find("option:selected").val();
+                    });
+                
+                });
+        </script>
+</head>
+
+<body>
+        <!-- Navigation Bar -->
+        <div class="container">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="Images/logo.png" alt="Logo of Income Tax Department of India" width="175px"/>
+                    
+                </a>
+            </div> 
+            <nav>
+                <ul>
+                    <li class="nav_li"> <button class="btn"><a href="about_us.html">About Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="feedback.html">Feedback</a></li>
+                    <li class="nav_li"><button class="btn"><a href="contact_us.html">Contact Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="signup.html">Registration</a></li>
+                </ul>
+            </nav>
+            </div>
+        <!-- Navigation Bar Ended-->
+    <br>
+
+        <div class="contact">
+            <h2>Help Desk Contact Details</h2>
+            <hr>
+
+            <div>
+
+                <div style="padding: 10px;">
+
+                    <table width="100%" cellspacing="2" cellpadding="0" >
+
+                        <thead>
+                            <tr>
+                                <th>Purpose</th>
+                                <th>Helpdesk</th>
+                                <th>Helpdesk Number</th>
+                                <th>Working Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>General Queries related to Income Tax
+                                </td>
+                                <td>Aayakar Sampark Kendra (ASK)</td>
+                                <td><span class="callicon"></span>1800 180 1961<br>
+                                    (or) 1961</td>
+                                <td >08:00 hrs - 22:00 hrs<br> (Monday to Saturday) </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Rectification, Refund, Intimation and other<br>Income Tax Processing Related Queries
+                                </td>
+                                <td>Centralized Processing Center</td>
+                                <td><span class="callicon"></span><span class="marl25">1800 103 4455 (or)</span><br>
+                                    <span class="marl25">1800 425 2229 (or)</span><br>
+                                    <span class="marl25">+91-80-46605200 (or)</span><br>
+                                    <span class="marl25">+91-80-22546500</span><br>
+                                </td>
+                                <td>08:00 hrs - 20:00 hrs<br> (Monday to Friday) </td>
+                            </tr>
+
+                            <tr>
+                                <td>e-Filing of Income Tax Return or Forms and other value
+                                    added <br> services provided through e-Filing Portal
+                                </td>
+                                <td>e-Filing</td>
+                                <td><span class="callicon"></span>
+                                    <span class="marl25">1800 103 0025 (or) </span><br>
+                                    <span class="marl25">+91-80-46122000 </span><br>
+                                    <span class="marl25">+91-80-26500026 </span>
+                                </td>
+                                <td class="al-l">09:00 hrs - 20:00 Hrs<br>(Monday to Saturday) <br>
+
+
+
+                                </td>
+
+
+
+                            </tr>
+
+                            <tr>
+                                <td>Form 16, Tax Credit (Form 26AS) and other queries related <br>to TDS statement, Form
+                                    15CA processing
+                                </td>
+                                <td>TDS Reconciliation Analysis and <br>Correction Enabling System (TRACES)</td>
+                                <td><span class="callicon"></span> <span class="marl25">1800 103 0344
+                                        (or)</span><br><span class="marl25"> +91-120-4814600</span></td>
+                                <td>10:00 hrs - 18:00 Hrs<br>(Monday to Saturday) </td>
+                            </tr>
+                            <tr>
+                                <td>Queries related to PAN &amp; TAN application for<br> Issuance/Update through NSDL
+                                </td>
+                                <td>Tax Information Network - NSDL</td>
+                                <td><span class="callicon"></span> <span class="marl25">+91-20-27218080</span><br></td>
+                                <td> 07:00 Hrs - 23:00 Hrs<br> (All Days)</td>
+                            </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+        <br>
+        <div class="contact">
+
+            <p class="text1">
+                <b>Web Manager</b><br><br>
+                &#x1F3E2;&nbsp;&nbsp;e-Filing Unit, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centralized Processing Centre, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Income Tax Department, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bengaluru 560500. <br><br>
+                &#x1F4E7;&nbsp;&nbsp;efilingwebmanager@incometax.gov.in <br><br>
+
+            </p>
+
+        </div>
+
+<br><br><br>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <p>Co-Created By: Arnav Sharma / Shivam Mishra / Manish Kumar Arya © 2021</p>
+        </footer>
+    </div>
+    
+</body>
+
+</html>

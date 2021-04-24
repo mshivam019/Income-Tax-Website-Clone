@@ -1,0 +1,286 @@
+*{transition:all 0.2s ease-in-out;}
+body{ background-color: #f5f4f4; min-width: 710px;}
+hr{ border: 1px solid #536162; }
+img{ padding: 10px 30px; }
+
+.btn
+{
+    background-color: #bdeaee   ;
+    padding: 10px;  
+    overflow:hidden;
+    display: inline;
+    border-color: #bdeaee ;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    animation: bounce 1s;
+    background-color: #76b4bd ;
+    border-color: #76b4bd ;
+  }
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  }
+
+nav select { display: none; }
+
+@media (max-width: 928px) {
+    nav ul     { display: none; }
+    nav select { display: inline-block; }
+}
+
+select
+{
+    margin-top:27px ;
+    margin-right: 24px;
+    background-color: #bdeaee;
+    width: 160px;
+    height: 64px;    
+    border-color: #bdeaee ;
+    border-radius: 50px;
+    border:2px solid #536162;
+    font-family: 'Bebas Neue', cursive;
+    font-size:x-large;
+    color: #536162 ;
+    text-decoration: none;
+}
+
+select:hover
+{
+    animation: bounce 1s;
+    background-color: #76b4bd ;
+    border-color: #76b4bd ;
+} 
+
+a
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size:xx-large;
+    text-decoration: none;
+    color: #536162 ;
+}
+
+h2
+{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 27px;
+    font-family: 'Merriweather', serif;
+    color: #536162;
+    margin: 10px;
+}
+.container
+{
+    clear:both;
+    overflow:auto;
+}
+nav{float:right;}
+.logo img{ float:left;}
+ul{ padding: 0px 15px;}
+
+.nav_li
+{    
+  display: inline-block; padding:10px;
+  font-size:20px; 
+  font-family:raleway;
+}
+
+li
+{
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Lexend', sans-serif;
+}
+
+li:hover{ font-weight:bold;}
+
+.main
+{
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 2fr 5fr 2.8fr;
+    grid-gap: 15px;
+}
+
+.news
+{
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;    
+}
+
+.login
+{
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.updates
+{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;    
+}
+
+.link_faqs
+{    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    margin: 0%;
+}
+
+.qlinks
+{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.faqs
+{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.center
+{
+    position: relative;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.label1
+{
+      position: relative;
+      left: -17%;
+      font-size: 17px;
+      font-family: 'Lexend', sans-serif;
+      
+}
+
+.text1
+{
+    padding: 0px 20px ;
+    font-size: 17px;
+    font-family: 'Lexend', sans-serif;
+}
+.text2
+{
+    padding: 0px 10px ;
+    font-family: 'Lexend', sans-serif;
+    font-size: 20px;
+}
+.text3
+{
+    padding: 0px 20px ;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+.text3:hover
+{
+    font-weight:bold;
+}
+
+.text4{
+    font-weight: bold;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 25px;
+}
+.text5{
+    font-size: 17px;
+    font-family: 'Lexend', sans-serif;
+}
+
+.aboutus
+{
+    margin: 5px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.footer-basic {
+    padding-bottom:10px;
+    color:#4b4c4d;
+    text-align:center;
+    font-size: small;
+  }
+
+
+/* Navigation Bounce Animation  Start*/
+
+        /* OUTER CONTAINER */
+        .s-wrap {
+            width: 100%;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        
+        /* MIDDLE WRAPPER */
+        .s-move {
+            display: flex;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+        
+        /* SLIDES */
+        .slide {
+            box-sizing: border-box;
+            padding: 10px;
+            /* Force all slides to layout horizontally */
+            width: 100%;
+            flex-shrink: 0; 
+        }
+        
+        /* SLIDE ANIMATION MAGIC */
+        @keyframes slideh {
+            /* Will use keyframes to shift the 5 slides *
+            0% { right: 0; }
+            20% { right: 100%; }
+            40% { right: 200%; }
+            60% { right: 300%; }
+            80% { right: 400%; }
+            100% { right: 0; }*/
+            /* BUT the above will be non-stop */
+            /* We want short pauses between each slide, so... */
+            0% { right: 0; }
+            15% { right: 0; }
+            20% { right: 100%; }
+            35% { right: 100%; }
+            40% { right: 200%; }
+            55% { right: 200%; }
+            60% { right: 300%; }
+            75% { right: 300%; }
+            80% { right: 400%; }
+            95% { right: 400%; }
+            100% { right: 0; }
+        }
+        .s-move { animation: slideh linear 16s infinite; }
+        .s-move:hover { animation-play-state: paused; }
+        /* Navigation Bounce Animation  Start*/
+/* Navigation Bounce Animation  Ended*/

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Income Tax Department of India</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"   href="Images/favicon.png"> 
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="main.js" type="text/javascript"></script>
+        <script>
+            // DOM ready
+            $(function() {
+                
+                // Create the dropdown base
+                $("<select />").appendTo("nav");
+                
+                // Create default option "Go to..."
+                $("<option />", {
+                        "selected": "selected",
+                        "value"   : "",
+                        "text"    : "About Us"
+                    }).appendTo("nav select");
+                
+                // Populate dropdown with menu items
+                $("nav a").each(function() {
+                        var el = $(this);
+                        $("<option />", {
+                            "value"   : el.attr("href"),
+                            "text"    : el.text()
+                        }).appendTo("nav select");
+                    });
+                
+                    // To make dropdown actually work
+                $("nav select").change(function() {
+                    window.location = $(this).find("option:selected").val();
+                    });
+                
+                });
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <div class="container">
+            <div class="logo">
+                <a href="main.html">
+                    <img src="Images/logo.png" alt="Logo of Income Tax Department of India" width="175px"/>
+                    
+                </a>
+            </div> 
+            <nav>
+                <ul>
+                    <li class="nav_li"> <button class="btn"><a href="about_us.html">About Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="feedback.html">Feedback</a></li>
+                    <li class="nav_li"><button class="btn"><a href="contact_us.html">Contact Us</a></li>
+                    <li class="nav_li"><button class="btn"><a href="signup.html">Registration</a></li>
+                </ul>
+            </nav>
+            </div>
+        <!-- Navigation Bar Ended-->
+        <br>
+
+
+
+        <h2>About this portal</h2>
+                <hr>
+                <p class="center" style="font-weight: bold; font-style: italic;">"Today, it takes more brains and effort to make out the income-tax form than it does to make the income."</p>
+                <p class="text1" style="text-align: right; position: relative; right: 10%;">- Alfred E. Neuman</p>
+                <p class="text1" style="font-size: 18px; text-align: justify;">This is the official portal of Income Tax Department, Ministry of Finance, Government of India. The portal has been developed as a Mission Mode Project under the National E-Governance Plan. The objective of this portal is to provide a single window access to the income tax related services for citizens and other stakeholders.</p>
+
+                
+
+        <div class="aboutus">
+            <div>
+                    <h2>Our Values</h2>
+                    <hr>
+                    <ul>
+                        <li class="text2">Integrity</li><br>
+                        <li class="text2">Accountability</li><br>
+                        <li class="text2">Responsiveness</li><br>
+                        <li class="text2">Professionalism</li><br>
+                        <li class="text2">Innovation</li><br>
+                        <li class="text2">Collaboration</li><br>
+                    </ul>
+                </div>
+
+            <div>
+                <h2>Our Mission</h2>
+                <hr>
+                <ul>
+                    <li class="text2">To formulate progressive tax policies</li><br>
+                    <li class="text2">To make compliance easy</li><br>
+                    <li class="text2">To enforce tax laws with fairness</li><br>
+                    <li class="text2">To deliver quality services</li><br>
+                    <li class="text2">To continuously upgrade skills and build a professional and motivated workforce</li><br>
+                </ul>
+            </div>
+            <div>
+                <h2>Our Vision</h2>
+                <hr>
+                <p class="text2">To partner in the nation building process through progressive 
+                    tax policy, efficient and effective administration and improved 
+                    voluntary compliance</p>
+        
+            </div>
+
+            
+        </div>
+            <br><br><br>
+        <div class="footer-basic">
+            <footer>
+                <p>Co-Created By: Arnav Sharma / Shivam Mishra / Manish Kumar Arya © 2021</p>
+            </footer>
+
+
+
+
+
